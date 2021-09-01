@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>How to Create Responsive Navigation Bar using HTML, CSS, and, little bit of JS</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="d-flex">
+          <div class="menu-btn"><i class="fas fa-bars fa-2x"></i></div>
+          <div class="logo">
+            <a href=""><img src="img/NNWeb-Logo.png" alt="" /></a>
+          </div>
+          <ul class="main-nav d-flex">
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Tutorials</a></li>
+          </ul>
+          <div class="social-nav">
+            <ul class="d-flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", () =>
+          document.querySelector(".main-nav").classList.toggle("show")
+        );
+    </script>
+  </body>
+</html>
